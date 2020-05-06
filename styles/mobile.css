@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
 
-  @media only screen and (min-width: 320px){
+  @media only screen and (min-width: 320px) and (max-width: 700px){
 
     body{
         font-family: 'Lato', sans-serif;
@@ -12,6 +12,7 @@
         background-color: #eee;
     }
 
+     /*nav-bar styles*/
     #header{
         position: fixed;
         z-index: 1000;
@@ -34,6 +35,7 @@
 
     #nav-bar li{
         padding-bottom: 5px;
+        font-size: 1.3rem;
     }
 
     .nav-link{
@@ -45,15 +47,15 @@
     #page-container{
         position: relative;
         z-index: 1;
-        margin-top: 100px;
+        margin-top: 200px;
         }
 
+   /*hero styles*/
     #hero {
         display: flex;
         flex-direction: column;
         height: auto;
         padding: 0 20px;
-        margin-bottom: 50px;
     }
 
     #email{
@@ -73,24 +75,33 @@
     font-size: 20px;
     }
 
+    /*features section*/
     #features{
         height: auto;
-        margin-bottom: 20px;
+        margin: 50px auto;
     }
 
-    .desc{
-        height: 150px;
+    .grid{
+        margin: 40px 0;
     }
+
+    .icon{
+        display: none;
+    }
+
+    /*how it works*/
 
     #how-it-works{
-        margin-bottom: 60px;
+        margin: 60px auto;
+        width: 90%;
     }
 
-    #how-it-works #video{
+    iframe{
         width: 100%;
-        height: 100%;
+        height: 200px;
     }
 
+     /*pricing styles*/
     #pricing{
         display: block;
         margin: 0 auto;
@@ -125,6 +136,7 @@
         margin: 15px auto;
     }
 
+    /*footer styles*/
     footer{
         background-color: lightgray;
         padding: 20px;
@@ -140,7 +152,7 @@
 
     footer li{
         list-style: none;
-        padding: 0 5px;
+        padding: 0 5px 5px;
     }
 
     a{

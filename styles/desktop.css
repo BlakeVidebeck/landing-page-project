@@ -1,15 +1,17 @@
-  @media only screen and (min-width: 700px){
+  @media only screen and (min-width: 701px){
 
     body{
         font-family: 'Lato', sans-serif;
         background-color: #eee;
     }
 
+    /*nav-bar styles*/
+
     #header{
         position: fixed;
         z-index: 1000;
         min-height: 75px;
-        width: 100%;
+        width: 100vw;
         padding: 0 10px;
         top: 0;
         background-color: #eee;
@@ -26,7 +28,7 @@
     header img{
         width: 70%;
         padding: 10px 10px 10px 0;
-    }
+    } 
 
     #nav-bar{
         width: 30%;
@@ -54,14 +56,16 @@
         position: relative;
         z-index: 1;
         margin-top: 100px;
+        text-align: center;
         }
+
+        /*hero styles*/
 
     #hero {
         display: flex;
         flex-direction: column;
         height: auto;
         padding: 0 20px;
-        margin-bottom: 50px;
     }
 
     #email{
@@ -84,43 +88,46 @@
     /*features section*/
     #features{
         height: auto;
-        margin: 0 auto;
-        width: 50%;
+        margin: 80px auto;
+        width: 55%;
     }
 
     #features .grid{
         display: flex;
     }
 
-    #features .icon {
-        margin-right: 50px;
+    .icon{
         color: darkorange;
-    }
-
-    .fa-3x {
-        font-size: 3em;
+        font-size: 3rem;
+        margin: auto 0;
     }
 
     .desc{
-        height: 150px;
         text-align: left;
+        padding: 20px 0;
+        margin-left: 30px;
     }
 
+
+    /*how it works styles*/
     #how-it-works{
-        margin: 0 auto;
-        width: 40%;
+        margin: 70px auto;
+        width: 50%;
+        height: 400px;
     }
 
-    #how-it-works #video{
+    iframe{
         width: 100%;
         height: 100%;
     }
 
+    /*pricing styles*/
     #pricing{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-top: 50px;
+        align-items: center;
+        margin: 60px auto;
         width: 70%;
     }
 
@@ -150,14 +157,16 @@
         padding: 10px 20px;
         background-color: #f1c40f;
         margin: 15px auto;
+        cursor: pointer;
     }
-
+    
+    /*footer styles*/
     footer{
         background-color: lightgray;
         padding: 20px;
         margin: 30px auto 0;
         text-align: right;
-        width: 70%;
+        width: 100%;
     }
 
     footer ul{
@@ -168,7 +177,7 @@
 
     footer li{
         list-style: none;
-        padding: 0 5px;
+        padding: 0 10px 10px;
     }
 
     a{
